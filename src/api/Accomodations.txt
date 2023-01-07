@@ -1,0 +1,8 @@
+provider1,Provider1-5,diari,athens,xarilaou 5,52194,fotino kai idaniko gia foitites sto kentro tis polis,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider2,Provider2-1,souita,athens,xarilaou 5,52194,ena poly zesto kai fotino full anakenismeno diamerisma 55tm,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider2,Provider2-2,diari,thessaloniki,xarilaou 5,52194,fotino mikro diamerisma idaniko gia foitites 32tm,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider2,Provider2-3,studio,athens,xarilaou 5,52194,ena poly zesto fotino studio 25tm sto kentro tis polis,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider2,Provider2-4,studio,thessaloniki,xarilaou 5,52194,zesto fotino studio sto kentro tis polis dipla stin paralia 22tm,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider2,Provider2-5,diari,athens,xarilaou 5,52194,fotino kai idaniko gia foitites sto kentro tis polis,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider1,Provider1-6,SUITA AA,THESSALONIKI,xarilaou 5,52194,APSOGO,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
+provider1,lam,diari,serres,palaiokastro,62300,diari fotino anakenismeno,thea sto bouno-wc-plintirio-Tv-tzaki-Internet-koyzina- -parking
