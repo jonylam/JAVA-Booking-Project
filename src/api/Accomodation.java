@@ -111,6 +111,8 @@ public class Accomodation {
             else{
                 a=a+"-"+Givens[i];
             }
+            if(i==8)
+                a=a+"-";
         }
         return a;
     }

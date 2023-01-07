@@ -1,6 +1,0 @@
-provider1,last1,password1,host
-provider2,last2,password2,host
-user1,last11,password1,user
-aa,aa,aa,user
-maria,siami,123,user
-takis,tsoykalas,123,host

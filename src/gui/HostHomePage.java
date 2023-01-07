@@ -4,9 +4,6 @@ import api.Accomodation;
 import api.Comment;
 import api.User;
 import api.Hosts;
-import api.ReadFromFile;
-import api.Users;
-import api.Main;
 import api.Users;
 
 
@@ -17,7 +14,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.List;
 
 public class HostHomePage extends JFrame implements ActionListener {
 
@@ -149,7 +145,8 @@ public class HostHomePage extends JFrame implements ActionListener {
 
         this.setContentPane(finalPanel);
         this.setVisible(true);
-        this.setSize(700, 700);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setSize(dim.width, dim.height);
         this.setLocationRelativeTo(null);
         this.setTitle("Host Homepage");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

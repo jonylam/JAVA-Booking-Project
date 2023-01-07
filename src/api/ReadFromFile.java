@@ -15,7 +15,7 @@ public class ReadFromFile{
      * @throws IOException
      */
     public ArrayList<User> readUsers() throws IOException {
-        File fileText=new File("src/api/Users.txt");
+        File fileText=new File("src/Users.txt");
         BufferedReader reader=new BufferedReader(new FileReader(fileText));
         String line=null;
         String[] data;
@@ -46,7 +46,7 @@ public class ReadFromFile{
      */
     public void changeFileUsers(ArrayList<User> x) throws IOException {
 
-        File tempFile=new File("src/api/Users.txt");
+        File tempFile=new File("src/Users.txt");
         PrintWriter writer=new PrintWriter(new FileWriter(tempFile));
         String line=null;
 
@@ -65,7 +65,7 @@ public class ReadFromFile{
      */
     ArrayList<Accomodation> temp1=new ArrayList<>();
     public ArrayList<Accomodation> readAccomodations() throws IOException {
-        File fileText=new File("src/api/Accomodations.txt");
+        File fileText=new File("src/Accomodations.txt");
         BufferedReader reader=new BufferedReader(new FileReader(fileText));
         String line=null;
         String[] data1;
@@ -90,7 +90,7 @@ public class ReadFromFile{
      */
     public void changeFileAccomodations(ArrayList<Accomodation> x) throws IOException {
 
-        File tempFile=new File("src/api/Accomodations.txt");
+        File tempFile=new File("src/Accomodations.txt");
         PrintWriter writer=new PrintWriter(new FileWriter(tempFile));
         String line=null;
 
@@ -115,7 +115,7 @@ public class ReadFromFile{
 
     public ArrayList<Comment> temp2=new ArrayList<>();
     public ArrayList<Comment> readComments() throws IOException {
-        File fileText=new File("src/api/Comments.txt");
+        File fileText=new File("src/Comments.txt");
         BufferedReader reader=new BufferedReader(new FileReader(fileText));
         String line=null;
         String s="---->>";
@@ -164,7 +164,7 @@ public class ReadFromFile{
      */
     public void changeFileComments(ArrayList<Comment> x) throws IOException {
 
-        File tempFile=new File("src/api/Comments.txt");
+        File tempFile=new File("src/Comments.txt");
         PrintWriter writer=new PrintWriter(new FileWriter(tempFile));
         String line=null;
 

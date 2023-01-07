@@ -5,9 +5,6 @@ import api.Accomodation;
 import api.Comment;
 import api.User;
 import api.Hosts;
-import api.Users;
-import api.Main;
-import api.Users;
 
 
 import javax.swing.*;
@@ -216,7 +213,7 @@ public class AccomodationWindow extends JFrame implements ActionListener {
 
         //label που εμφανιζει την βαθμολογια για το καταλυμα αν εχει εστω και ενα σχολιο.
         if(countComments != 0)
-            averageRate.setText("Rate out of 10: " + Integer.toString(sumRating/countComments));
+            averageRate.setText("Rate out of 10: " + Double.toString((double) sumRating/countComments));
         else
             averageRate.setText("Rate out of 10: -");
 
@@ -257,7 +254,7 @@ public class AccomodationWindow extends JFrame implements ActionListener {
         this.setContentPane(finalPanel);
 
         this.setVisible(true);
-        this.setSize(800, 800);
+        this.setSize(1000, 900);
         this.setLocationRelativeTo(null);
         this.setTitle("Accomodation " + chosenAccomodation.getName());
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
