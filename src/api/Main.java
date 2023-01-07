@@ -1,7 +1,12 @@
 package api;
+
+import gui.login;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+
+
 
 
 
@@ -35,6 +40,6 @@ public class Main {
          */
         c=r.readComments();
 
-        //login loginpage=new login(r1,r2,c);
+        login loginpage=new login(r1,r2,c);
     }
 }
