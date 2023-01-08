@@ -10,7 +10,7 @@ public class ReadFromFile{
     public ArrayList<User> temp=new ArrayList<>();
 
     /**
-     * diabasma users apo arxeio
+     * Διαβασμα users απο το αρχειο.
      * @return
      * @throws IOException
      */
@@ -22,12 +22,6 @@ public class ReadFromFile{
         while( (line= reader.readLine()) !=null )
         {
 
-            /*data=line.split(",");
-            User n=new User();
-            n.setName(data[0]);
-            n.setPassword(data[1]);
-            n.setRole(data[2]);
-            temp.add(n);*/
             data=line.split(",");
             User n=new User();
             n.setName(data[0]);
@@ -40,7 +34,7 @@ public class ReadFromFile{
     }
 
     /**
-     * enimerosi toy arxeioy users
+     * Ενημερωση του αρχειου των users
      * @param x
      * @throws IOException
      */
@@ -59,7 +53,7 @@ public class ReadFromFile{
     }
 
     /**
-     * diabasma gia Accomodation
+     * Διαβασμα των καταληματων
      * @return
      * @throws IOException
      */
@@ -69,22 +63,23 @@ public class ReadFromFile{
         BufferedReader reader=new BufferedReader(new FileReader(fileText));
         String line=null;
         String[] data1;
-        String[] data2;//xrishmopoihte gia na dwsw times apo to string poy periexei oles tis paroxes mazemenes xwrismenes me -, se ena Givens[9] toy ka8e accomodation me ka8e stoixeio na einai mia paroxi (thea,mpanio..parking)
+        //Χρηση για να δωσω τιμες απο το String που περιεχει ολες τις παροχες μαζι χωρισμενες με -,σε ενα Givens[9] του καθε καταληματος με καθε στοιχειο να ειναι μια παροχη(1.θεα,...,9.parking)
+        String[] data2;
         int i=0;
         while( (line= reader.readLine()) !=null )
         {
 
             data1=line.split(",");
             Accomodation w=new Accomodation(data1[0],data1[1],data1[2],data1[3],data1[4],data1[5],data1[6],data1[7]);
-            data2=w.toArray(data1[7]);//kalw tin toArray poy dinei times se ka8e paroxi i toy Givens[9] toy accomodation w apo to string me tis paroxes.
-            w.setGivens1(data2);//dinw to array poy dimioyrgisa ws timi gia na arxikopoihsw to Givens[9] toy ka8e accomodation.
+            data2=w.toArray(data1[7]);//καλω την toArray που δινει τιμες σε καθε παροχη i του Givens[9] του καταληματος w απο το string με τις παροχες.
+            w.setGivens1(data2);//δινω το array που δημιουργησα ως τιμη για να αρχικοποιησω το Givens[9] του καθε καταληματος.
             temp1.add(w);
         }
         return temp1;
     }
 
     /**
-     * enimerosi gia accomodation toy idi yparxontos arxeioy
+     * ενημερωση αρχειου των καταληματων
      * @param x
      * @throws IOException
      */
@@ -158,7 +153,7 @@ public class ReadFromFile{
     }
 
     /**
-     * eisagwgh comments sto arxeio.
+     * ενημερωση του αρχειου των Comments.
      * @param x
      * @throws IOException
      */

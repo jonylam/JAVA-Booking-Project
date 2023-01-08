@@ -13,7 +13,9 @@ public class Accomodation {
     private String description;
     private String givens;
 
-    private String[] Givens;//pinakas Givens opoy ka8e stoixeio toy antoistixh stin katalili paroxi toy accomodation apo tis 9 sinolika(1.thea .... 9.parking).
+    //πινακας Givens οπου καθε στοιχειο του αντιστοιχει στην αντιστοιχη παροχη του καταληματος απο τις 9 συνολικα(1.θεα, ... ,9.Parking).
+    private String[] Givens;
+
 
 
     public Accomodation()

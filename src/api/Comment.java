@@ -7,7 +7,7 @@ public class Comment {
     private String comment;     //σχολιο για το καταλημα.
     private String rate;        //βαθμος αξιολογησης απο 1 εως 5.
 
-    private String date;
+    private String date;        //ημερομηνια αξιολογησης
 
     public Comment(){
         this.accomodation=null;

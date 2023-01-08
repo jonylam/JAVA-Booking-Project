@@ -24,6 +24,7 @@ public class Hosts extends User{
      */
     public void addAccomodation(String hostname,ArrayList<Accomodation> x,Accomodation newaccomodation) throws IOException
     {
+        //προσθετω το νεο accomodation και ανανεωνω το αρχειο με τα accomodations αλλα και το arraylist
         x.add(newaccomodation);
 
         r.changeFileAccomodations(x);
@@ -39,29 +40,11 @@ public class Hosts extends User{
      */
     public void deleteAccomodation(String hostname,ArrayList<Accomodation> x,ArrayList<Comment> comments,Accomodation AccomodationName) throws IOException
     {
-        //μπορω νομιζω και να την κανω void.
-        for(Accomodation k:x)
-        {
-            if(k.getHost().equals(hostname))
-            {
-                if(k.getName().equals(AccomodationName.getName()))
-                {
-                    x.remove(k);
-                    //delete τα comments για το συγκεκριμενο Accomodation.
-                    for(Comment c:comments)
-                    {
-                        if(c.getAccomodation().equals(k.getName()))
-                        {
-                            comments.remove(c);
-                            r.changeFileComments(comments);
-                        }
-                    }
 
-                    break;
-                }
-
-            }
-        }
+        //διαγραφω το accomodation αλλα και τα σχολια τα οποια εχει.
+        comments.removeIf(c -> c.getAccomodation().equals(AccomodationName.getName()));
+        x.remove(AccomodationName);
+        r.changeFileComments(comments);
         r.changeFileAccomodations(x);
 
     }
@@ -151,9 +134,9 @@ public class Hosts extends User{
 
     public boolean newHost(ArrayList<User> x,String name,String lastname,String password) throws IOException {
 
-        int flag=0;//an flag=1 tote to username yparxei diaforetika oxi.
+        int flag=0; //αν flag=1 ο host υπαρχει ηδη.Διαφορετικα δεν υπαρχει
 
-        //elegxos an yparxei to username kai an yparxei epistrefw false diaforetika dimioyrgw to host kai epistrefw true.
+        //ελεγχος αν υπαρχει το username και αν υπαρχει επιστρεφω false διαφορετικα δημιουργω το host και επιστρεφω true
         for(User w:x)
         {
             if(w.getName().equals(name))

@@ -5,6 +5,7 @@ import api.Comment;
 import api.User;
 import api.Hosts;
 import api.ReadFromFile;
+import api.Users;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,6 +21,7 @@ public class HostAccomodationWindow implements ActionListener {
     Accomodation n=new Accomodation();
     Hosts h=new Hosts();
 
+    ArrayList<Comment> tempComments;
     ArrayList<User> users;
     ArrayList<Accomodation> accomodations;
     ArrayList<Comment> comments;
@@ -334,9 +336,10 @@ public class HostAccomodationWindow implements ActionListener {
 
                 errorLabel.setText("Fill all the gaps with *");
             }
-            else {
+            else {  //υλοποιηση του να προσθεθει το καταλημα.
 
 
+                //παιρνω τις τιμες που δινει ο χρηστης για το νεο καταλημα.
                 String[] Givens = new String[9];
                 Givens[0] = accView.getText();
                 Givens[1] = accBath.getText();
@@ -357,8 +360,11 @@ public class HostAccomodationWindow implements ActionListener {
 
                 String givens = n.toString(Givens);
 
+                //δημιουργω το νεο καταλημα.
                 Accomodation a = new Accomodation(name, accName1, accType1, accLocation1, accAdress1, accTk1, accDesc1, givens);
+
                 a.setGivens1(Givens);
+
                 try {
                     h.addAccomodation(name, accomodations, a);
                 } catch (IOException ex) {
@@ -388,6 +394,7 @@ public class HostAccomodationWindow implements ActionListener {
             }
             else {
 
+                //παιρνω τις τιμες που δινει ο χρηστης για το νεο καταλημα.
                 dataPrint[0]=accView.getText();
                 dataPrint[1]=accBath.getText();
                 dataPrint[2]=accWash.getText();
@@ -410,15 +417,45 @@ public class HostAccomodationWindow implements ActionListener {
                 Accomodation temp=new Accomodation(name,accname,acctype,acclocation,accaddress,acctk,accdesc,toStringFromDataArray);
                 temp.setGivens1(dataPrint);
 
+                //κραταω τα σχολια που ηδη υπαρχουν για το accomodation διοτι αν το διαγραψω θα διαγραφουν και τα σχολια του.
+                try {
+                    tempComments=r.readComments();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+
                 //με αυτον τον τροπο διαγραφοντας το παλιο accomodation και δημιουργοντας ενα νεο πετυχαινω την επεξεργασια του καταλυματος.
                 try {
-                    h.deleteAccomodation(name,accomodations,comments,ChosenAccomodation);
+                    h.deleteAccomodation(name,accomodations,comments,ChosenAccomodation); //διαγραφω το καταλημα
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
 
                 try {
-                    h.addAccomodation(name,accomodations,temp);
+                    h.addAccomodation(name,accomodations,temp); //προσθετω το νεο καταλημα αφου εχει διαγραφει το παλιο
+
+                    //ελεγχω αν εχει αλλαξει το ονομα του καταληματος διοτι αν αλλαξε πρεπει να αλλαξω και το αρχειο και arraylist με το ιδιο νεο ονομα.
+                    if(ChosenAccomodation.getName().equals(accname)) { //περιπτωση που δεν εχει αλλαξει το ονομα του καταληματος
+
+                        comments = tempComments;    //κραταω τα παλια σχολια ωστε να εκτελεστει σωστα η επεξεργασια του καταληματος
+                        r.changeFileComments(comments);
+
+                    }
+                    else    //περιπτωση που εχει αλλαξει το ονομα του καταληματος.Πρεπει να αλλαξω και το arraylist και το αρχειο με το νεο πλεον ονομα
+                    {
+
+                        comments = tempComments;
+
+                        for(Comment c:comments)
+                        {
+
+                            if(c.getAccomodation().equals(ChosenAccomodation.getName()))
+                                c.setAccomodation(accname);
+
+                        }
+
+                        r.changeFileComments(comments);
+                    }
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }

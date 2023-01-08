@@ -183,13 +183,6 @@ public class Users extends User{
                 {
                     if(w.getAccomodation().equals(a.getName())) //Ταυτοποιηση του ονοματος του καταληματος της αξιολογησης με το ονομα του καταληματος.
                     {
-                        /*System.out.println("Accomodation: "+w.getAccomodation());
-                        System.out.println("Type: "+a.getType());
-                        System.out.println("Location: "+a.getLocation());
-                        System.out.println("Description: "+a.getDescription());
-                        System.out.println("Givens: "+a.getGivens());
-                        System.out.println("Rate: "+w.getRate());
-                        System.out.println("Date: "+w.getDate());*/
 
                         temp.add("For Accomodation: "+w.getAccomodation());
                         temp.add("Type: "+a.getType());
@@ -211,11 +204,9 @@ public class Users extends User{
         {
             double mo=(double)sum/count;
             temp.add("Average rate of total comments: "+String.format("%.2f",mo));
-            // System.out.println("M.O: "+String.format("%.2f",mo));
         }
         else //Ο user δεν εχει κανει καμια αξιολογηση
         {
-            // System.out.println("No comments from user " + name);
             temp.add("No comments from user " + name);
         }
         return temp;

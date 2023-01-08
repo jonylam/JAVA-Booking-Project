@@ -123,7 +123,7 @@ class HostsTest {
 
         ArrayList<Accomodation> accomodations=r.readAccomodations();
 
-        ArrayList<Comment> comments=new ArrayList<>();
+        ArrayList<Comment> comments=r.readComments();
 
         host.deleteAccomodation("takis",accomodations,comments,accomodations.get(accomodations.size() - 1));
 

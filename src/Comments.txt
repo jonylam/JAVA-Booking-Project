@@ -1,126 +1,132 @@
 ---->>
-Provider1-suita
-aa
-poly katharh kai apsogi suita ola htan teleia
-5
-1/7/23
----->>
-Provider1Hotel-diamerisma
-aa
-apsogo katalima yperoxh thea kai apisteuth eksipiretisi apo pleuras prosopikoy
-5
-2/7/23
----->>
-Provider1-suita
-maria
-apisteuti suita ola apsoga
-5
-2/2/22
----->>
-Provider1-diamerisma
-maria
-ola kala to protino
-4
-22/5/22
----->>
-Provider1Hotel-diamerisma
-user1
-teleio sas to protino
-5
-23/4/22
----->>
-Provider2-suita
-user2
-apisteuti suita isws h kaliterh poy exw paei. thn sistinw
-5
-22/5/22
----->>
-Provider2-diamerisma1
-user2
-kakh ixomonosi pragma poly simantiko gia emena.
-2
-15/7/22
----->>
-Mery-diamerisma
-user2
-arketa kalo. ola kala. 8a to protina dioti gia ta xrimata toy dn mporeis na zitas kai polla
-4
-14/6/22
----->>
-LamHotel-diklino
-user2
-poly kalh eksipiretisi poly kalh timi kai yperoxh thea
-4
-11/8/22
----->>
-Provider2-suita
-user1
-me liga logia apla teleia!!
-5
-12/9/22
----->>
 Provider2-diamerisma1
 user1
 para poly metria hxomonosi. akoygame ta panta apo dipla. poly kako
 3
 12/2/22
 ---->>
-LamHotel-triklino
-user1
-kalo domatio kai apsogh eksipiretisi. kalh thea. 
+Provider1-suita
+maria
+Apla teleia. Thn protinw!
+5
+5/6/22
+---->>
+LamHotel-diklino
+maria
+Ola kala. Apsogo prosopiko kai poly kathara. Yperoxh thea!
 4
-14/7/22
+12/4/22
+---->>
+Provider1-suita
+user1
+Apsogh suita.Poly kalh epilogh kai sxetika oikonomikh.
+5
+5/2/22
+---->>
+Provider2-diamerisma2
+user1
+Ola kala to protinw!
+4
+6/11/22
+---->>
+Provider2-diamerisma3
+user1
+To mono elatoma h hxomonosi. an den enoxliste einai mia xara
+3
+19/12/22
 ---->>
 Mery-diamerisma
 user1
-gia thn timh toy poly kalo.
+Gia thn timh toy poly kalo.
 4
 4/6/22
 ---->>
-Provider1-diamerisma
-user1
-apla metrio.
+Mery-diamerisma
+maria
+Poly oikonomiko kai arketa timio gia ta lefta toy.
+4
+12/7/22
+---->>
+Provider1Hotel-diamerisma
+maria
+Den moy arese to mpanio. Kakh diarithmisi dioti htan stena. Kata ta alla ola kala.
 3
-24/8/22
+17/8/22
+---->>
+Provider2-suita
+user2
+Apisteuti suita isws h kaliterh poy exw paei. Thn sistinw!
+5
+22/5/22
+---->>
+Provider2-diamerisma1
+user2
+Kakh hxomonosi pragma poly simantiko gia emena. Apla kako.
+2
+15/7/22
+---->>
+LamHotel-triklino
+user2
+Poly eugeniko prosopiko. Eyxaristh diamonh, kai apisteuth THEA!
+4
+16/9/22
+---->>
+Mery-diamerisma
+user2
+Arketa kalo. ola kala. 8a to protina dioti gia ta xrimata toy dn mporeis na zitas kai polla.
+4
+14/6/22
+---->>
+Provider1-diamerisma
+user2
+Ola apsoga.
+5
+2/2/22
+---->>
+Provider1-suita
+aa
+Apla telio.
+5
+2/2/22
 ---->>
 Provider2-diamerisma2
 aa
-ola kala.hremh perioxh kalh hxomonosi kai arketa ka8aro
+Ola kala. Hremh perioxh kalh hxomonosi. Arketa ka8aro!
 4
 16/7/22
 ---->>
 Provider2-diamerisma3
 aa
-poly metria hxomonosi pragma poly simantiko gia mena. kata ta alla ola kala.
+Poly metria hxomonosi pragma poly simantiko gia mena. Kata ta alla ola kala.
 3
 26/12/22
 ---->>
-Provider2-diamerisma3
-user1
-to mono elatoma h hxomonosi. an den enoxliste einai mia xara
-3
-19/12/22
----->>
 LamHotel-triklino
-maria
-arketa kalo dwmatio.yperoxo prosopiko kai poly kalh 8ea
+aa
+Eyxaristh diamonh. To protinw !
 4
-7/9/22
+24/5/22
+---->>
+Provider1Hotel-diamerisma
+aa
+Apsogo!
+5
+2/2/22
+---->>
+Provider1-diamerisma
+aa
+Telio!
+5
+2/2/22
+---->>
+Provider2-suita
+user1
+Me liga logia apla teleia!!
+5
+12/9/22
 ---->>
 LamHotel-diklino
 user1
-kalh eksipiretisi poly katharo dwmatio kai poly kalh thea.
+Poly euxaristw prosopiko kai poly euxaristh diamonh.To proteinw!
 4
-15/12/22
----->>
-Provider2-diamerisma2
-user1
-ola kala.
-4
-6/11/22
----->>
-Provider1-suita
-user1
-ola teleia!
-5
-23/3/22
+5/11/22
